@@ -12,3 +12,11 @@ input ,textarea {border:none;outline: none}
 .clear {clear: both; overflow: hidden; height: 0; display: block;}
 .fl{float:left;}
 .fr{float:right;}
+.absolute-Center {  
+  width: 50%;  
+  height: 50%;  
+  overflow: auto;  
+  margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0;  
+}  
