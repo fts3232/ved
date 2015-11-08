@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+ font-family:'fzltqh';
+ src:url(fzltqh.TTF);
+}
+
 html{
 	font-size:10px;
 	line-height:12px;
@@ -7,16 +12,37 @@ html{
 body{
 	font-size:1em;
 }
+p{font-size: 1.6em;}
+h1,h2{font-family: 'fzltqh'}
 a {text-decoration:none;color:#000;outline: none}
+a:hover,a:active,a:focus{outline: none; text-decoration: none;}
+ul{list-style: none;}
 input ,textarea {border:none;outline: none}
 .clear {clear: both; overflow: hidden; height: 0; display: block;}
 .fl{float:left;}
 .fr{float:right;}
 .absolute-center {  
-  width: 50%;  
   height: 50%;  
-  overflow: auto;  
   margin: auto;  
   position: absolute;  
   top: 0; left: 0; bottom: 0; right: 0;  
 }  
+.martop50{margin-top: 2em}
+.martop70{margin-top: 6em}
+.color1dd2af{color:#1dd2af}
+.colorfff{color:#fff;}
+.bg414353{background: #414353}
+.overflow-hidden{overflow: hidden;}
+.bg_676975{background: #676975}
+.row{margin: 0;}
+.padding0{padding: 0}
+
+@media (min-width: 768px) and (max-width:1199px ){
+	.martop50{margin-top: 7em}
+	.martop70{margin-top: 0em}
+
+}
+@media (min-width: 1200px) and (max-width:1500px){
+	.martop50{margin-top: 0em}
+	.martop70{margin-top: 0em}
+}
