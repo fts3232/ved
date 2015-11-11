@@ -38,15 +38,19 @@ $(document).ready(function(){
 	})
 	var p=1;
 	var imagesLoading = true;
-	$('.waterfall').masonry({
-  		// set itemSelector so .grid-sizer is not used in layout
-  		itemSelector: '.news-box',
-  		// use element for option
-  		columnWidth: '.news-box',
-  		percentPosition: true,
-  		gutter: 10,
+	$('.waterfall').imagesLoaded(function(){
+		$('.waterfall').masonry({
+	  		// set itemSelector so .grid-sizer is not used in layout
+	  		itemSelector: '.news-box',
+	  		// use element for option
+	  		columnWidth: '.news-box',
+	  		percentPosition: true,
+	  		gutter: 10,
+		})
+		appendToMasonry()
 	})
-	appendToMasonry();
+	
+	//appendToMasonry();
 	$(window).scroll(function() {
 		if($(document).height() - $(window).height() - $(document).scrollTop() < 10) {
 			if(!imagesLoading){
@@ -60,7 +64,7 @@ $(document).ready(function(){
 		}
 		arr=new Array();
 		imagesLoading = true;
-		$.post('data/data.json',{},function(data,status){
+		$.get('data/data.json',function(data,status){
 			for(i=0;i<data.result.length;i++){
 				 var elem = document.createElement('div');
 				 name='news-box'
@@ -107,7 +111,7 @@ $(document).ready(function(){
 		}
 	}
 	$(document).on('click','.read-btn',function(){
-		$.post('data/article.json',{},function(data){
+		$.get('data/article.json',function(data){
 			var Range = 3- 0;   
 			var Rand = Math.random();   
 			rand=0 + Math.round(Rand * Range)
