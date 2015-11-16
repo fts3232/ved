@@ -1,10 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-@font-face {
- font-family:'fzltqh';
- src:url(fzltqh.TTF);
-}
-
 html{
 	font-size:10px;
 	line-height:12px;
@@ -22,12 +17,7 @@ input ,textarea {border:none;outline: none}
 .clear {clear: both; overflow: hidden; height: 0; display: block;}
 .fl{float:left;}
 .fr{float:right;}
-.absolute-center {  
-  height: 50%;  
-  margin: auto;  
-  position: absolute;  
-  top: 0; left: 0; bottom: 0; right: 0;  
-}  
+.absolute-center {   height: 50%;  margin: auto;   position: absolute;  top: 0; left: 0; bottom: 0; right: 0;  }  
 .martop50{margin-top: 2em}
 .martop70{margin-top: 4em}
 .color1dd2af{color:#1dd2af}
@@ -41,7 +31,6 @@ input ,textarea {border:none;outline: none}
 .display_inline_block{display: inline-block;}
 
 /* nav */
-
 .navbar{border:none;}
 .navbar-default{background: #414353;}
 .navbar-default .navbar-nav>li>a{color:#f2f2f4;padding-top: 25px;padding-bottom: 25px;}
@@ -50,9 +39,7 @@ input ,textarea {border:none;outline: none}
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#f2f2f4;}
 .search-btn{  position: absolute;right: 9px;}
 .logo{margin-top: 11px;width:100%;}
-
 .navbar-nav>li>a:hover{border-bottom: 2px solid #1dd2af;}
-
 @media (min-width: 768px) and (max-width:1199px ){
 	.martop50{margin-top: 7em}
 	.martop70{margin-top: 0em}
@@ -66,12 +53,6 @@ input ,textarea {border:none;outline: none}
 	  .navbar-header{width: 15%;}
 	  
 }
-@media (min-width: 992px){
-	.footer-logo img{  width: 29%;}
-}
-@media (min-width: 1200px){
-	.footer-logo img{  width: auto;}
-}
 .footer{background: #414353;position: relative;}
 .footer .pull-left{position: absolute; top: 25%;}
 .footer-nav{margin-bottom: 5px;}
@@ -83,14 +64,14 @@ input ,textarea {border:none;outline: none}
 .back_top{cursor:pointer;}
 @media(min-width: 1024px) and (max-width:1279px){
 	.footer .pull-left{top: 17%;}
-	.footer-logo{  margin-bottom: 7px;margin-top: 0px;
+	.footer-logo{  margin-bottom: 7px;margin-top: 0px;}
 }
 @media(min-width: 1280px) and (max-width:1400px){
-	.footer .pull-left{top: 17%;}
+	.footer .pull-left{top: 17%}
 }
 @media(min-width: 1401px) and (max-width:1600px){
 	.footer .pull-left{top: 17%;}
-	.footer-logo{  margin-bottom: 10px; margin-top: 17px;}
+	.footer-logo{margin-bottom: 10px; margin-top: 17px;}
 }
 
 @media(min-width: 1680px){
