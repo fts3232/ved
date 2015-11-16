@@ -16,7 +16,7 @@ $(document).ready(function(){
 		  }) 
 	}else{
 		var mySwiper = new Swiper ('.swiper-01', {
-		    slidesPerView : 1.8,//'auto'
+		    slidesPerView : 2,//'auto'
 		    spaceBetween : 20,
 		    slidesOffsetBefore : 30,
 		  }) 

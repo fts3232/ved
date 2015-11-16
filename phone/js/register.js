@@ -2,7 +2,7 @@ var win=$(window),winH=win.height(),winW=win.width();
 function resize(){
 	winW=win.width();
     winH=win.height();
-     $('.navbar').width(winW)
+    $('.navbar').width(winW)
     $('.main').height(winH-50)
 }
 resize()
@@ -21,7 +21,14 @@ $(document).ready(function(){
 		$('.navbar-nav>li>a').eq(7).addClass('on');
 	})
 	$('.box a').click(function(){
+		
 		i=$(this).index();
+		if(i==0){
+			$('.main').height(winH-50)
+		}
+		else{
+			$('.main').height(winH-50+200)
+		}
 		$(this).addClass('on').siblings('a').removeClass('on')
 		$('form').eq(i).show().siblings('form').hide();
 	})
