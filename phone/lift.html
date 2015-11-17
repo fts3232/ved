@@ -12,205 +12,146 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/news.css">
-	
-	<!-- ie8以下支持html5 -->
-	<script src="//cdn.bootcss.com/html5media/1.1.8/html5media.min.js"></script>
-	<script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script>
 	<link rel="shortcut icon" href="favicon.ico"  type=”image/x-icon”>
-
+	<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
 	<!-- end ie8以下支持html5 -->
 </head>
 <body>
 	<!-- header -->
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
-	    	<div class="navbar-header">
-	          <a href="#">
-		        <img alt="Brand" class="logo" src="images/logo.png">
-		      </a>
-	        </div>
-	        <div class="collapse navbar-collapse" id="example-navbar-collapse">
-	          <ul class="nav navbar-nav navbar-right ">
-	          	  <li><a href="index.html">金音首页</a></li>
-	              <li><a href="about.html">关于金音</a></li>
-	              <li><a href="news.html">最新资讯</a></li>
-	              <li><a href="#">金音产品</a></li>
-	              <li><a href="lift.html">健康生活</a></li>
-	              <li><a href="#">联系我们</a></li>
-	              <li><a href="#">招贤纳士</a></li>
-	              <li><a href="register.html">登陆/注册</a></li>
-	              <li><input type="text" placeholder="快速搜索商品"/><input type="image" class="search-btn" src="images/search.jpg" alt=""></li>
-	          </ul>
-	        </div>
-	    </div>
-	</nav>
+	<div class="navbar navbar-default" >
+	   <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+	         data-target="#example-navbar-collapse">
+	         <span class="sr-only">切换导航</span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"/></a>
+	   </div>
+	   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+	      <ul class="nav navbar-nav">
+			<li><a href="index.html">金音首页</a></li>
+            <li><a href="about.html">关于金音</a></li>
+            <li><a href="news.html">最新资讯</a></li>
+            <li><a href="product.html">金音产品</a></li>
+            <li><a href="lift.html">健康生活</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="recruit">招贤纳士</a></li>
+            <li><a href="register.html">登陆/注册</a></li>
+	      </ul>
+	      <div style="border-top:2px solid rgba(255,255,255,0.1);   line-height: 23px;height:27px;  text-align: center;" class="navbar-suoxiao"><a style="display:inline-block;  width: 10%;height: 5px;background: rgba(255,255,255,0.7);border-radius:15px"></a></div>
+	   </div>
+	</div>
 	<!-- end header -->
-	<div class="container-full">
+	<div class="container-full bg">
 		<img src="images/lift_banner.jpg" class="img-responsive"/>
+	</div>
+	<div class="search">
+		<input type="text" class="news-search" placeholder="搜索关键字"/><input type="image" class="news-search-btn" src="images/search.png" alt="">
 	</div>
 	<div class="top"><img src="images/news-top.png" class="img-responsive"></div>
 	<div class="coontainer-full waterfall-zone">
-		<div class="container">
-			<div class="row postion_r display_inline_block">
-				<input type="text" class="news-search" placeholder="搜索关键字"/><input type="image" class="news-search-btn" src="images/search.jpg" alt="">
-			</div>
 			<div class="row waterfall">
-				<div class="news-box">
-					<img src="images/news-pic-01.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
+				<div class="gutter-sizer"></div>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-02.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-01.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-02.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-01.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
+				</a>
+				<a href="lift_detail.html">
+					<div class="news-box">
+						<img src="images/news-pic-01.jpg"/>
+						<div class="news-content">
+							<h3 class="news-title">应该从小培养的健康习惯</h3>
+							<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要</div>
+						</div>
 					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
-					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-02.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
-					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
-					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-01.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
-					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
-					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-02.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
-					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
-					</div>
-				</div>
-				<div class="news-box">
-					<img src="images/news-pic-01.jpg"/>
-					<div class="news-content">
-						<h3 class="news-title">应该从小培养的健康习惯</h3>
-						<div class="news-detail">爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，比今天给...</div>
-					</div>
-					<div class="news-button-box">
-						<a class="read-btn">阅读全文</a>
-						<a><img src='images/like.png'/> 320</a>
-						<a>阅读 540</a>
-					</div>
-				</div>
-			</div>
-			<div class="loading" style=" display:none;text-align:center;padding:10px 0; color:#999;"><img src="data:image/gif;base64,R0lGODlhEAALAPQAAP///zMzM+Li4tra2u7u7jk5OTMzM1hYWJubm4CAgMjIyE9PT29vb6KiooODg8vLy1JSUjc3N3Jycuvr6+Dg4Pb29mBgYOPj4/X19cXFxbOzs9XV1fHx8TMzMzMzMzMzMyH5BAkLAAAAIf4aQ3JlYXRlZCB3aXRoIGFqYXhsb2FkLmluZm8AIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7" alt=""><br />Loading...</div>
+				</a>
 		</div>
-	</div>
-	<div class="news">
-		<div class="container mCustomScrollbar">
-			<div class="news-close"></div>
-			<div class="news-top"><img src="images/news-top.png" class="img-responsive"></div>
-			<div class="title">
-				应该从小培养的健康习惯
-			</div>
-			<div class="content">
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-				爱读书是名人共有的优秀品质。书是前人探索大千世界的物质和精神富的结晶，是人类数千年文明成果的重要载体。让孩子从小爱上读书，爱读
-			</div>
-		</div>
+		<div class="loading" style=" display:none;text-align:center;padding:20px 0; color:#9f9f9f;"><img src="data:image/gif;base64,R0lGODlhEAALAPQAAP///zMzM+Li4tra2u7u7jk5OTMzM1hYWJubm4CAgMjIyE9PT29vb6KiooODg8vLy1JSUjc3N3Jycuvr6+Dg4Pb29mBgYOPj4/X19cXFxbOzs9XV1fHx8TMzMzMzMzMzMyH5BAkLAAAAIf4aQ3JlYXRlZCB3aXRoIGFqYXhsb2FkLmluZm8AIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7" alt=""><br />Loading...</div>
 	</div>
 	<!-- footer -->
 	<div class="footer">
 		<img src="images/back_top.png" class="back_top">
 		<div class="container-full">
-			<div class="footer-bg"><img src='images/footer.jpg' class="img-responsive"/></div>
 			<div class="container">
 				<div class="pull-left">
 					<div clas="row">
-						<div class="footer-nav">
-							<a href="#">金音首页</a>
-							<a href="#">关于金音</a>
-							<a href="#" href="#">最新资讯</a>
-							<a href="#">金音产品</a>
-							<a href="#">健康生活</a>
-							<a href="#">联系我们</a>
-							<a href="#">招贤纳士</a>
-						</div>
-						<div class="footer-logo">
-							<img src="images/logo.png"/>
-						</div>
+						<img src="images/footer-logo.png"  class="footer-logo"/>
 						<p>Copyright © 2010 CHINA GOLDEN VOICE. 版权所有. 京ICP备09025285号-1</p>
+					</div>
+				</div>
+				<div class="pull-right">
+					<div clas="row">
+						<img src="images/qr.jpg" class="qr"/>
 					</div>
 				</div>
 			</div>
@@ -219,17 +160,13 @@
 	<!-- end footer -->
 </body>
 </html>
-<!-- 兼容ie8 media -->
-<script src="js/respond.js"></script>
 <!-- end -->
 
-<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"/>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
-
 <script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"/>
 <script src="js/swiper.3.1.2.jquery.min.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/lift.js"></script>
+<script src="js/news.js"></script>

@@ -2,7 +2,7 @@ var win=$(window),winH=win.height(),winW=win.width();
 function resize(){
 	winW=win.width();
     winH=win.height();
-    $('.news').width(winW+17).height(winH-70)
+    $('.news').width(winW).height(winH-$('.navbar').height()).css({'margin-top':$('.navbar').height()})
     $('.bar').height(winH);
     /*about2H=$('.about-2 .row').eq(0).height();
     if(winW>=1024 && winW<=1200 && about2H>256){
@@ -17,26 +17,13 @@ win.resize(function(){
 	resize();
 });
 $(document).ready(function(){
+
 	$('.top').click(function(){
 			$('body').stop().animate({'scrollTop':'0px'});
-			$('.top').hide();
 		})
-	$('body').mousewheel(function(event, delta, deltaX, deltaY) {  
-			total=$('body').scrollTop()
-		    if(total>=100){
-		    	$('.top').show();
-		    }
-		});  
+	
     $(".news>.container").mCustomScrollbar({ theme:"dark"});
-	$('.navbar-nav>li>a').mouseover(function(){
-		$('.navbar-nav>li>a').eq(2).removeClass('on');
-		$(this).addClass('on').siblings().removeClass('on');
-	}).mouseout(function(){
-		$('.navbar-nav>li>a').removeClass('on')
-	})
-	$('.navbar').mouseout(function(){
-		$('.navbar-nav>li>a').eq(2).addClass('on');
-	})
+	
 	var p=1;
 	var imagesLoading = true;
 	$('.waterfall').imagesLoaded(function(){
@@ -46,16 +33,17 @@ $(document).ready(function(){
 	  		// use element for option
 	  		columnWidth: '.news-box',
 	  		percentPosition: true,
-	  		gutter: 10,
+	  		gutter: '.gutter-sizer',
+	  		percentPosition: true
 		})
 		appendToMasonry()
 	})
 	
 	//appendToMasonry();
 	$(window).scroll(function() {
-		if($(document).height() - $(window).height() - $(document).scrollTop() < 10) {
+		if($(document).height() - $(window).height() - $(document).scrollTop() < 100) {
 			if(!imagesLoading){
-				appendToMasonry();
+				//appendToMasonry();
 			} 
 		}
 	})
@@ -65,7 +53,7 @@ $(document).ready(function(){
 		}
 		arr=new Array();
 		imagesLoading = true;
-		$.get('data/data.json',function(data,status){
+		$.get('data/data1.json',function(data,status){
 			for(i=0;i<data.result.length;i++){
 				 var elem = document.createElement('div');
 				 name='news-box'
@@ -74,11 +62,6 @@ $(document).ready(function(){
 				 				'<div class="news-content">'+
 								'<h3 class="news-title">'+data.result[i].title+'</h3>'+
 								'<div class="news-detail">'+data.result[i].detail+'</div>'+
-								'</div>'+
-								'<div class="news-button-box">'+
-								'<a class="read-btn">阅读全文</a>'+
-								'<a><img src="images/like.png"/> '+data.result[i].like+'</a>'+
-								'<a>阅读 '+data.result[i].read+'</a>'+
 								'</div>'
 				arr.push(elem)
 			}
@@ -97,7 +80,7 @@ $(document).ready(function(){
 			// 调用瀑布流布局的appended方法
 			}).progress( onProgress );
 			
-		},'json').error(function() { $('.loading').html('Data load faild, please try again later.') })
+		},'json').error(function() { $('.loading').html('没有更多啦~');$('.loading').show()})
 	}    
 	function getItemElement() {
 		  var elem = document.createElement('div');
@@ -111,7 +94,7 @@ $(document).ready(function(){
 			$(image.img).parent().addClass('is-broken');	
 		}
 	}
-	$(document).on('click','.read-btn,.news-box>img',function(){
+	/*$(document).on('click','.read-btn,.news-box>img',function(){
 		$.get('data/article.json',function(data){
 			var Range = 3- 0;   
 			var Rand = Math.random();   
@@ -119,13 +102,8 @@ $(document).ready(function(){
 			$('.title').html(data.result[rand].title)
 			$('.content').html(data.result[rand].content)
 			$('.news').show()
-			$('body').css({'overflow':'hidden'})
 		},'json')
-	})
-	$(document).on('click','.news-close',function(){
-		$('.news').hide();
-		$('body').css({'overflow':'auto'})
-	})
+	})*/
 	$(document).on('click','.news-top',function(){
 		$('#mCSB_1_dragger_vertical').stop().animate({'top':'0px'});
 		$('#mCSB_1_container').stop().animate({'top':'0px'})

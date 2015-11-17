@@ -55,7 +55,7 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 		if($(document).height() - $(window).height() - $(document).scrollTop() < 10) {
 			if(!imagesLoading){
-				appendToMasonry();
+				//appendToMasonry();
 			} 
 		}
 	})
@@ -65,7 +65,7 @@ $(document).ready(function(){
 		}
 		arr=new Array();
 		imagesLoading = true;
-		$.get('data/data.json',function(data,status){
+		$.get('data/data1.json',function(data,status){
 			for(i=0;i<data.result.length;i++){
 				 var elem = document.createElement('div');
 				 name='news-box'
@@ -97,7 +97,7 @@ $(document).ready(function(){
 			// 调用瀑布流布局的appended方法
 			}).progress( onProgress );
 			
-		},'json').error(function() { $('.loading').html('Data load faild, please try again later.') })
+		},'json').error(function() { $('.loading').html('没有更多啦~');$('.loading').show(); })
 	}    
 	function getItemElement() {
 		  var elem = document.createElement('div');

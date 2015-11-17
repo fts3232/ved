@@ -30,6 +30,7 @@ a{cursor: pointer;}
 .top{  position: fixed; right: 5%; z-index: 10; cursor: pointer; bottom: 10%; display: none;}
 .content img{width: 70%}
 .news-box>img{cursor: pointer;}
+.loading{font-size: 1.2em}
 @media (min-width: 1024px){
 	.news-button-box a:nth-child(1){  width: 35%;display: inline-block;}
 	.news-button-box a:nth-child(2){  width: 25%;display: inline-block;}

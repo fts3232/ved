@@ -114,12 +114,5 @@ $(document).ready(function(){
 	        },
 		})  
 	})
-	$(".navbar-suoxiao").swipe({
-			swipe:function(event,direction, distance, duration, fingerCount) {
-				if(direction=='up'){
-					$('.navbar-collapse').removeClass('in')
-				}
-			}
-	})
 })
 

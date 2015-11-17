@@ -21,4 +21,5 @@ a,a:hover,a:visited,a:active{color: #fff}
 	.banner>p{position: absolute;bottom: 90px;width: 90%;text-align: left;left: 5% ; bottom: 10%}
 	.swiper-slide{width: 30%}
 	.about-07 .content>p{margin:0;margin-bottom: 0px;font-size: 1.2em}
+	.swiper-01{  bottom: 25%;}
 }

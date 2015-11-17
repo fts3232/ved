@@ -62,12 +62,15 @@ input ,textarea {border:none;outline: none}
 .back_top{position: absolute;bottom: 0; left: 50%;}
 .footer p{ color: #fff;opacity: 0.5;font-size: 0.4em}
 .back_top{cursor:pointer;}
+
 @media(min-width: 1024px) and (max-width:1279px){
 	.footer .pull-left{top: 17%;}
 	.footer-logo{  margin-bottom: 7px;margin-top: 0px;}
+	.footer-logo img{width: 23%}
 }
 @media(min-width: 1280px) and (max-width:1400px){
 	.footer .pull-left{top: 17%}
+	.footer-logo img{width: 23%}
 }
 @media(min-width: 1401px) and (max-width:1600px){
 	.footer .pull-left{top: 17%;}
