@@ -1,0 +1,33 @@
+.banner{margin-top: 50px;position: relative;}
+.about-02{width: 90%; margin:0 auto; color: #2e3235}
+.about-02>img{padding:0;  margin-bottom: 10px;width: 49%;}
+.about-02>img:nth-child(odd){margin-right: 2%}
+.about-02>p{  padding: 0px 20px;text-align: center;  margin-bottom: 80px;}
+.banner>p{width: 90%;text-align: center;text-align: center;margin: 0 auto; margin-bottom: 50px}
+.about-03{text-align: center;  padding: 30px 0px;}
+.about-03>img{width: 55%}
+.about-03>p{text-align: left;width: 80%; margin:0 auto;  margin-top: 15px;}
+.about-04{position: relative;}
+.about-04-text{position: absolute;top: 0; color: #fff;text-align: left; top:15%;width: 80%; margin-left: 10%;}
+.swiper-01{position: absolute;bottom: 7%;width: 100%}
+.about-05{width: 90%;margin: 0 auto;padding: 40px 50px;color: #2e3235}
+.about-05>img{margin-bottom: 10px}
+.about-06{padding-bottom: 23px}
+.about-06>p{font-size: 1.2em;margin:0;color: #2e3235}
+.swiper-scrollbar{ width: 90%; height: 5px;  margin-top: 20px;margin-left: 5%;}
+.swiper-02 img{border: 3px solid #a2a3ab}
+.swiper-02 p{ color:#000; text-align: center;  margin-top: 3px;}
+.about-07{position: relative;}
+.about-07 .content{color: #fff;height: 17%;text-align: center;}
+.about-07 .content>p{margin:0;margin-bottom: 3px}
+#map{height: 200px}
+.job-list>img{width: 49%;float: left;}
+.job-list>img:nth-child(odd){margin-right: 2%;}
+a,a:hover,a:visited,a:active{color: #fff}
+.job-more{background:rgba(37,38,42,0.2);padding: 8px 20px; margin-bottom: 18px; margin-top: 3px;display: inline-block;}
+@media (width: 320px) {
+	.swiper-slide{width: 30%}
+	.about-07 .content>p{margin:0;margin-bottom: 0px;font-size: 1.2em}
+	.swiper-01{  bottom: 3%;}
+
+}

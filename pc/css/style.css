@@ -8,12 +8,14 @@ body{
 	font-size:1em;
 	font-family: '微软雅黑';
 }
-p{font-size: 1.6em;}
+p{font-size: 1.3em;}
 h1,h2{font-family: 'fzltqh'}
 a {text-decoration:none;color:#000;outline: none}
 a:hover,a:active,a:focus{outline: none; text-decoration: none;}
 ul{list-style: none;}
 input ,textarea {border:none;outline: none}
+input[type="text"],input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;}
 .clear {clear: both; overflow: hidden; height: 0; display: block;}
 .fl{float:left;}
 .fr{float:right;}
@@ -34,12 +36,14 @@ input ,textarea {border:none;outline: none}
 .navbar{border:none;}
 .navbar-default{background: #414353;}
 .navbar-default .navbar-nav>li>a{color:#f2f2f4;padding-top: 25px;padding-bottom: 25px;}
-.navbar-default .navbar-nav>li>input{border-radius: 10px;margin-top: 25px;  height: 1.7em;padding-left: 6px;}
-.navbar-default .navbar-nav>li>a.on{  border-bottom: 2px solid #1dd2af;}
+.navbar-default .navbar-nav>li>input{border-radius: 10px;margin-top: 25px;  height: 1.7em;padding-left: 6px;  margin-left: 10px;}
+/*.navbar-default .navbar-nav>li>a.on{  border-bottom: 2px solid #1dd2af;}*/
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#f2f2f4;}
 .search-btn{  position: absolute;right: 9px;}
 .logo{margin-top: 11px;width:100%;}
-.navbar-nav>li>a:hover{border-bottom: 2px solid #1dd2af;}
+/*.navbar-nav>li>a:hover{border-bottom: 2px solid #1dd2af;}*/
+.navbar-nav{position: relative;}
+.nav_border{ height: 2px; background: #1dd2af;width:78px;}
 @media (min-width: 768px) and (max-width:1199px ){
 	.martop50{margin-top: 7em}
 	.martop70{margin-top: 0em}
@@ -53,36 +57,54 @@ input ,textarea {border:none;outline: none}
 	  .navbar-header{width: 15%;}
 	  
 }
-.footer{background: #414353;position: relative;}
-.footer .pull-left{position: absolute; top: 25%;}
+.footer{background: #414353;position: relative; height: 200px}
+.footer .container-full{padding: 30px;}
+.footer .container{  position: relative;}
+.footer .pull-left{ top: 25%;}
+.footer .pull-right{color: #fff;font-size: 1.2em}
+.footer .pull-right img:nth-child(1){margin-right: 10px}
+.footer .pull-right img:nth-child(2){margin-top: 10px;width: 87%}
 .footer-nav{margin-bottom: 5px;}
 .footer-nav a{color:#fff;  padding-right:15px;}
 .footer-nav p{color: #71727c}
-.footer-logo{  margin-bottom: 20px;margin-top: 20px;}
-.back_top{position: absolute;bottom: 0; left: 50%;}
+.footer-logo{  margin-bottom: 20px;margin-top: 20px;  padding-top: 1px;}
+.back_top{position: absolute;bottom: 0; left: 47.5%;width: 5%;}
 .footer p{ color: #fff;opacity: 0.5;font-size: 0.4em}
 .back_top{cursor:pointer;}
-
+.footer .container{width: 92%}
 @media(min-width: 1024px) and (max-width:1279px){
 	.footer .pull-left{top: 17%;}
-	.footer-logo{  margin-bottom: 7px;margin-top: 0px;}
+	.footer-logo{    margin-bottom: 16px; margin-top: 30px;}
 	.footer-logo img{width: 23%}
+	.footer .pull-right img:nth-child(2){width: 71%}
+	.footer{height: 175px}
+	.footer .container-full{padding: 28px}
+
 }
 @media(min-width: 1280px) and (max-width:1400px){
 	.footer .pull-left{top: 17%}
-	.footer-logo img{width: 23%}
+	.footer-logo img{width: 23%;  padding-top: 1px;}
+	.footer .container-full{padding: 28px}
+	.footer{height: 170px}
+	.footer .pull-right img:nth-child(2){width: 67%}
 }
 @media(min-width: 1401px) and (max-width:1600px){
 	.footer .pull-left{top: 17%;}
-	.footer-logo{margin-bottom: 10px; margin-top: 17px;}
+	.footer-logo{margin-bottom: 10px; margin-top: 17px; }
+	.footer{height: 193px;}
+
 }
 
-@media(min-width: 1680px){
+@media(width: 1680px){
 	.footer .pull-left{top: 17%;}
-	.footer-logo{  margin-bottom: 20px;margin-top: 20px;}
+	.footer-logo{  margin-bottom: 20px;margin-top: 20px;  }
+	.footer .container{width: 92%}
+	.footer .pull-right img:nth-child(2) {width: 83.5%;}
 	 
 }
 @media(min-width: 1681px) and (max-width:1920px){
-	.footer .pull-left{top: 17%;}
-	.footer-logo{  margin-bottom: 20px;margin-top: 20px;}
+	.footer .pull-left{top: 41px}
+	.footer .pull-right{top: 41px;right: 0px}
+	.footer-logo{  margin-bottom: 20px;margin-top: 20px; }
+	.footer .container{width: 92%}
 }

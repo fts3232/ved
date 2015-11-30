@@ -2,7 +2,7 @@ var win=$(window),winH=win.height(),winW=win.width();
 function resize(){
 	winW=win.width();
     winH=win.height();
-    $('.news').width(winW).height(winH-$('.navbar').height()).css({'margin-top':$('.navbar').height()})
+    $('.news').height(winH-$('.navbar').height()).css({'margin-top':$('.navbar').height()})
     $('.bar').height(winH);
     /*about2H=$('.about-2 .row').eq(0).height();
     if(winW>=1024 && winW<=1200 && about2H>256){
@@ -11,6 +11,7 @@ function resize(){
     else{
     	$('.about-2 .overflow-hidden').height(about2H);
     }*/
+
 }
 resize()
 win.resize(function(){

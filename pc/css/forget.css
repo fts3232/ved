@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.main{margin-top: 70px;}
+.main{position: relative;}
+.main input[type="text"],.main input[type="password"]{color:rgba(65,67,83,0.6);background-color:transparent;  line-height: 3em; font-size: 1.5em; height: 3em; width: 320px;}
+.main input[type="submit"]{width:250px; background-color:rgba(65,67,83,0.65); color: #fff; height: 40px; margin-top: 20px;margin-bottom: 20px}
+.main input[type="submit"]:hover{background-color:rgba(65,67,83,0.80);}
+.absolute-center{height: 70%}
+.line{  border-bottom: 1px solid #414353;  display: inline-block; position: relative; margin: 0 auto;}
+.container-full img{margin-bottom: 85px;}
+label{font-size: 1.7em}
+.main input[type="button"]{background: #24b59d; color: #fff; height: 35px; width: 152px; border-radius: 3px; margin-top: 20px}
+.main input[type="button"]:hover{background: #209e89}
+.main input[type="button"].disabled{background: #c7c7c7}
+.step-02,.step-02-error,.step-03,.step-04{display: none;}
+.vaildateing{display: none; font-size: 1.3em}
+.icon{position: absolute; top: 15px;right: 0;display: none;}
+
+.copyright{position: absolute;bottom: 0;  text-align: center;width: 100%; color: rgba(116,116,116,0.6); font-size: 1.2em}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:rgba(65,67,83,0.6);
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:rgba(65,67,83,0.6);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color:rgba(65,67,83,0.6);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color:rgba(65,67,83,0.6);
+}

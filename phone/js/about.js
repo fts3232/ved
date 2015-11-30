@@ -13,12 +13,14 @@ $(document).ready(function(){
 		    slidesPerView : 'auto',//'auto'
 		    spaceBetween : 20,
 		    slidesOffsetBefore : 30,
+		    slidesOffsetAfter : 30,
 		  }) 
 	}else{
 		var mySwiper = new Swiper ('.swiper-01', {
 		    slidesPerView : 2,//'auto'
 		    spaceBetween : 20,
 		    slidesOffsetBefore : 30,
+		    slidesOffsetAfter : 30,
 		  }) 
 	}
 	var mySwiper = new Swiper ('.swiper-02', {

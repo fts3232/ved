@@ -1,14 +1,16 @@
 .waterfall-zone{ background: url(../images/news-bg.jpg);}
-.news-search{border-radius: 10px;margin-top: 25px;  height: 1.7em;padding-left: 6px;}
-.news-search-btn{  position: absolute;right: 9px;  top: 25px; height: 1.7em;}
+.news-search{border-radius: 25px;margin-top: 25px;  height: 1.7em;padding: 15px;width: 320px}
+.news-search-btn{  position: absolute;right: 9px;  top: 25px; height: 2.5em;}
 .waterfall-zone>.container{position: relative;}
 .waterfall{  margin-top: 20px;}
 .news-box{background-color: #fff; border-radius: 10px;display: inline-block;width: 19%; margin-bottom: 10px}
 .news-box>img{width: 100%}
-.news-title{font-size: 1.5em; color: #81828a}
+.news-title{font-size: 1.5em; color: #81828a;margin-top: 0px}
 .news-detail{font-size: 1.2em; color: #cbcccc}
 .news-content{padding: 10px}
-.news-button-box{padding: 10px}
+.news-button-box{padding: 10px;border-top:1px dashed #cbcccc;}
+.overflow-hidden>img{width: 100%;transition: transform 2s;-moz-transition: -moz-transform 2s;	/* Firefox 4 */-webkit-transition: -webkit-transform 2s;	/* Safari 和 Chrome */-o-transition: -o-transform 2s;}
+.overflow-hidden>img:hover{transform:scale(1.08);-moz-transform:scale(1.08);-webkit-transform:scale(1.08);-o-transform:scale(1.08)}
 a{cursor: pointer;}
 .news-button-box a:nth-child(1){  width: 40%;display: inline-block;}
 .news-button-box a:nth-child(2){  width: 30%;display: inline-block;}
@@ -19,16 +21,16 @@ a{cursor: pointer;}
 	-o-transform: rotateZ(90deg);
 	-ms-transform: rotateZ(90deg);
 	transform: rotateZ(90deg);}
-.news-close{width: 50px;height: 50px;position: absolute;right: 0;top:5px; cursor: pointer; background: no-repeat url("../images/news-close.png");-webkit-transition: -webkit-transform 0.5s ease-out;-moz-transition: -moz-transform 0.5s ease-out; -o-transition: -o-transform 0.5s ease-out;-ms-transition: -ms-transform 0.5s ease-out;}
+.news-close{width: 50px;height: 50px;position: absolute;right: 15px;top:5px; cursor: pointer; background: no-repeat url("../images/news-close.png");-webkit-transition: -webkit-transform 0.25s ease-out;-moz-transition: -moz-transform 0.25s ease-out; -o-transition: -o-transform 0.25s ease-out;-ms-transition: -ms-transform 0.25s ease-out;}
 .news>.container{margin-top: 20px;  height: 95%}
-.title{color:#fff; font-size: 5em; margin-bottom: 15px}
-.content{color: #666666;font-size: 1.2em}
+.title{color:#fff; font-size: 3.2em; margin-bottom: 15px;width: 88%}
+.content{color: #d7d7d7;font-size: 1.2em;text-align: center;width: 88%}
 .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background-color: #3f79a6}
 .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{ background-color: #3f79a6}
 .mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{background-color: #3f79a6}
 .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{background-color: #3f79a6}
 .top{  position: fixed; right: 5%; z-index: 10; cursor: pointer; bottom: 10%; display: none;}
-.content img{width: 70%}
+.content img{width: 55%}
 .news-box>img{cursor: pointer;}
 .loading{font-size: 1.2em}
 @media (min-width: 1024px){
@@ -37,3 +39,6 @@ a{cursor: pointer;}
 	.news-button-box a:nth-child(3){  width: 35%;display: inline-block;}
 }
 .news-top{  position: fixed; right: 8%; bottom: 8%; cursor: pointer;}
+@media(min-width: 1680px) and (max-width: 1920px){
+	.waterfall-zone>.container{width: 60%}
+}

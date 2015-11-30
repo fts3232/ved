@@ -23,12 +23,7 @@ $(document).ready(function(){
 	$('.box a').click(function(){
 		
 		i=$(this).index();
-		if(i==0){
-			$('.main').height(winH-50)
-		}
-		else{
-			$('.main').height(winH-50+200)
-		}
+		$('.main').height(winH-50)
 		$(this).addClass('on').siblings('a').removeClass('on')
 		$('form').eq(i).show().siblings('form').hide();
 	})

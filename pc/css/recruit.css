@@ -7,7 +7,7 @@
 .about-04 h1{color:#fff;}
 .about-04 p{color:#fff;}
 .about-04-right>img{margin-bottom: 1.5em}
-.about-04-left{height: 50%; text-align: left;}
+.about-04-left{height: 50%; text-align: left;  border-left: 3px solid #1dd2af; padding-left: 10px;}
 
 .mCSB_inside>.mCSB_container{margin-right: 0; margin-left: 30px}
 .mCSB_scrollTools{left: 10px;}
@@ -23,44 +23,83 @@
 
 .recruit-text-01{ width: 20%; margin-bottom: 35px;}
 .recruit-text_01{  width: 67%; margin:0 auto;}
-.recruit-01{width: 60%;  margin-top: 50px;margin-bottom: 50px;}
+.recruit-01{width: 45%;  margin-top: 50px;margin-bottom: 50px;}
 .about-text-03{  width: 25%; margin-bottom: 10px;}
 .recruit-text-02{  text-align: center; margin-top: 50px;}
 .recruit-text-02>img{width: 25%}
 .recruit-text_02{ text-align: center;width: 51%;margin: 0 auto;  margin-top: 30px; margin-bottom: 30px;}
-.job{  width: 65%;margin:0 auto;}
+.job{  width: 51%;margin:0 auto;}
 .job>img{margin-bottom: 30px}
-.recruit-text_03{  text-align: center;margin: 0 auto;width: 40%; font-size: 1.2em; border-radius: 5px;  margin-bottom: 50px; margin-top: 20px}
+.recruit-text_03{  text-align: center;margin: 0 auto;width: 40%; border-radius: 5px;  margin-bottom: 50px; margin-top: 20px}
 .recruit-text_03>p{background: #d9d9dd; padding: 5px 20px;  border-radius: 5px;}
 #map{height: 400px;  margin-top: -13px; border-top: 3px solid #babac0}
 @media (min-width: 1024px) and (max-width: 1600px) {
-
 }
 @media(width:1920px){
 	.about-text-03{margin-bottom: 50px}
+	.about-04-01{width: 56%;margin: 0 auto;}
+	.about-text-03{margin-top: 70px}
 }
 @media(width: 1680px){
 	.about-text-03{margin-bottom: 50px}
-	 .about-04-right>img{  width: 60%;}
+	.about-text-03{margin-top: 30px}
+	 .about-04-right>img{  width: 100%;}
+	  .about-04-01{width: 56%;margin: 0 auto;}
 }
 @media(min-width: 1440px) and (max-width: 1679px){
 	.about-text-03{margin-bottom: 50px}
-	 .about-04-right>img{  width: 60%;}
+	 .about-04-right>img{  width: 100%;}
+	 .about-04-01{width: 67%;margin: 0 auto;}
 }
 @media(min-width: 1330px) and (max-width: 1439px){
- 	 .about-04-right img{width: 65%}
+ 	 .about-04-right img{width: 100%}
 	 .img-thumbnail{margin-top: 3%;} 
+	 .about-04-01{width: 70%;margin: 0 auto;}
 }
 @media(min-width: 1280px) and (max-width: 1329px){
 	
-	 .about-04-right>img{  width: 68%;}
+	 .about-04-right>img{  width: 65%;}
+	  .about-04-01{width: 80%;margin: 0 auto; margin-left: 15%}
 
 }
 @media(min-width: 1024px) and (max-width: 1279px){
 	.about-02{padding-bottom: 50px}
 	 .recruit-text-02{margin-top: 50px}
 	 .img-thumbnail{  width: 68%;}
-	 .about-04-right>img{  width: 50%;}
+	 .about-04-right>img{  width: 57%;}
 	 p{font-size: 1.2em}
+	 .about-04-01{width: 100%;margin: 0 auto; margin-left: 9%}
 
+}
+
+.about-04-left{
+	border-left: 3px solid #1dd2af;
+	padding-left: 10px;
+	width: 50%;
+	display: inline-block;
+	float: left;
+	margin-right:10%; 
+	overflow: hidden;
+}
+.about-04-right{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+.about-04-left p{margin: 0;}
+
+@media(width: 1330px) {
+	.about-04-left{overflow: hidden;max-height: 290px}
+	 .about-text-03{margin-top: 10px}
+}
+@media(width: 1440px) {
+	.about-04-left{overflow: hidden;max-height: 290px}
+	.about-text-03{margin-bottom: 50px}
+}
+@media(width: 1280px) {
+	.about-04-left{overflow: hidden;max-height: 223px}
+	 .about-text-03{margin-top: 30px}
+}
+@media(width: 1024px) {
+	.about-04-left{overflow: hidden;max-height: 220px}
 }

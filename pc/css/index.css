@@ -6,7 +6,7 @@
 .bg img{transition: transform 2s;-moz-transition: -moz-transform 2s;	/* Firefox 4 */-webkit-transition: -webkit-transform 2s;	/* Safari 和 Chrome */-o-transition: -o-transform 2s;}
 .bg img:hover{transform:scale(1.08);-moz-transform:scale(1.08);-webkit-transform:scale(1.08);-o-transform:scale(1.08)}
 .banner{margin-top: 71px; position: relative;}
-.banner .more{position: absolute;  bottom: 25%;left: 15%;background-color: rgba(65,67,83,0.8); padding: 15px 60px;color:#fff;}
+.banner .more{line-height:2em;font-size: 1.2em;  border-radius: 3px;position: absolute;  bottom: 25%;left: 15%;background-color: rgba(65,67,83,0.7); padding: 15px 60px;color:#fff;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .banner .more:hover{ background-color: rgba(65,67,83,0.9);}
 .join-banner .more:hover{background-color: rgba(65,67,83,0.9);}
 @media (min-width: 768px) and (max-width:1199px ){
@@ -15,15 +15,15 @@
 
 .about{  position: relative;}
 .about h1{  font-size: 4em;font-weight: bold;}
-.about .more{border:1px solid #7a7b86; padding: 10px 20px; margin:0 auto;   display: inline-block;  pointer-events: all;}
+.about .more{ font-size: 1.2em;  border-radius: 3px;border:1px solid #7a7b86; padding: 10px 20px; margin:0 auto;   display: inline-block;  pointer-events: all;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .about .more-content{ height: 80%; pointer-events:none}
 .about .more:hover,.about .more:active{border:1px solid #414353; background-color: #777884; color:#fff;}
 .about .more.on{border:1px solid #414353; background-color: #777884; color:#fff; padding: 10px 20px; margin:0 auto; width:110px; margin-top: 30px;}
 
-.about-2 .more-btn-414354{color: #414353;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(65,67,83,0.11);}
+.about-2 .more-btn-414354{ font-size: 1.2em; border-radius: 3px;color: #414353;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(65,67,83,0.11);transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .about-2 .more-btn-414354:hover{background-color: rgba(65,67,83,0.2);}
 
-.about-2 .more-btn:nth-child(2),.about-2 .more-btn:nth-child(3){color: #fff;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(255,255,255,0.11);}
+.about-2 .more-btn:nth-child(2),.about-2 .more-btn:nth-child(3){ font-size: 1.2em; border-radius: 3px;color: #fff;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(255,255,255,0.11);transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .about-2 .more-btn:hover{background-color: rgba(255,255,255,0.2);}
 
 
@@ -40,15 +40,15 @@
 .about-2 .right-top-border img{transition: transform 2s;-moz-transition: -moz-transform 2s;	/* Firefox 4 */-webkit-transition: -webkit-transform 2s;	/* Safari 和 Chrome */-o-transition: -o-transform 2s;}
 .about-2 .right-top-border img:hover{transform:scale(1.08);-moz-transform:scale(1.08);-webkit-transform:scale(1.08);-o-transform:scale(1.08)}
 .about-2 .right-bottom .bg{height: 100%}
-.about-2 .right-bottom .more{ color:#fff;background-color: rgba(255,255,255,0.2); padding:10px 10px;  position: relative; top: -35px;}
+.about-2 .right-bottom .more{ font-size: 1.2em;  border-radius: 3px;color:#fff;background-color: rgba(255,255,255,0.2); padding:10px 10px;  position: relative; top: -35px;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .about-2 .right-bottom .more:hover{background-color: rgba(255,255,255,0.3);}
 .right-bottom-text{ pointer-events:none; height: 80%}
 .right-bottom-text>img{width: 95%; margin: 0 auto}
 .about-2 .left-top-border{margin-top: 20px;}
 .jiao{position: absolute;z-index: 1; top: 49%;}
 
-.news-more-btn{pointer-events:all;color: #fff; background-color: rgba(255,255,255,0.11);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */  padding: 10px 60px;  margin-top: 30px;display: inline-block; margin-bottom: 2em}
-.news-more-btn:hover{color:#fff;background-color: rgba(255,255,255,0.2);}
+.news-more-btn{ border-radius: 3px; font-size:1.2em;pointer-events:all;color: #fff; background-color: rgba(255,255,255,0.11);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */  padding: 10px 60px;  margin-top: 30px;display: inline-block; margin-bottom: 2em;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.news-more-btn:hover,.news-more-btn:active{color:#fff;background-color: rgba(255,255,255,0.2);}
 @media \0screen\,screen\9 {/* 只支持IE6、7、8 */
   .news-more-btn{
     background-color:#fff;
@@ -97,6 +97,10 @@
 .product-cate .product-cate-box:nth-child(4){margin-left: -55px}
 .product-cate .product-cate-box:nth-child(5){margin-left: -55px}
 .product-cate-box.on{background: #414353; z-index: 2}
+.about_right_bottom{width: 62.5%}
+.product-btn{font-size: 1.2em}
+
+.about_right_top{  width: 37.5%;  padding-left: 5%;padding-right: 5%;}
 @media (min-width: 992px){
 	.product-cate .product-cate-box:nth-child(2){margin-left:  -4.5%;}
 	.product-cate .product-cate-box:nth-child(3){margin-left:  -4.5%;}
@@ -106,8 +110,8 @@
 	.product-cate-pic{position: absolute;top:0; left: 10px;  left: 34%;top: 10%;}
 	.product-cate-box p{color: #fff;  margin-top: 16%; margin-left: -55%;}
 
-	.product-btn{ background: #efefef;border: 3px solid rgba(0,0,0,0.3);color: #414353; padding: 5px 15px;text-align: center; float: left; margin-right: 20px}
-	.product-btn.on{ background: #414353;border: 3px solid rgba(0,0,0,0.3); color: #fff;padding: 5px 15px; text-align: center;float: left;; margin-right: 20px}
+	.product-btn{   border-radius: 3px;background: #efefef;color: #414353; padding: 5px 20px;text-align: center; float: left; margin-right: 20px}
+	.product-btn.on{ background: #414353;color: #fff;padding: 5px 20px; text-align: center;float: left;; margin-right: 20px}
 	
 	.news-text{width: 11%}
 	.news-banner{  height: 302px;}
@@ -121,8 +125,8 @@
 	.product-cate-pic{position: absolute;top:0; left: 10px;  left: 27%;top: 10%;}
 	.product-cate-box p{color: #fff;  margin-top: 16%; margin-left: -24%;}
 
-	.product-btn{ background: #efefef;border: 3px solid rgba(0,0,0,0.3);color: #414353; padding: 10px 25px;text-align: center; float: left; margin-right: 20px}
-	.product-btn.on{ background: #414353;border: 3px solid rgba(0,0,0,0.3); color: #fff;padding: 10px 25px; text-align: center;float: left;; margin-right: 20px}
+	.product-btn{  border-radius: 3px; background-color: #efefef;color: #414353; padding: 5px 30px;text-align: center; float: left; margin-right: 20px}
+	.product-btn.on{ background-color: #414353;color: #fff;padding: 5px 30px; text-align: center;float: left;; margin-right: 20px}
 	.news-text{width: auto}
 	.news-banner{  height:auto;}
 	
@@ -159,16 +163,16 @@
 
 
 
-.join-banner{position: relative;border-bottom: 3px solid #a1a1a8}
+.join-banner{position: relative;border-bottom: 3px solid #a1a1a8;}
 .join-banner img{width: 100%}
-
+.join-banner .more{  border-radius: 3px;font-size: 1.2em;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .news-content{position: absolute; top: 0;left: 0;right: 0; bottom: 0;text-align: center;pointer-events:none;  margin-top: 1.5%;}
 .news-list{pointer-events:all;}
 .news-box{padding: 5px; background: #eeeeee}
 .news-box img{width: 100%}
 .news-box-content{text-align: left;  margin-top: 15px; }
 .news-box-content>p{font-weight: bolder; color:#414353; padding-left: 3px;  height: 2.1em;}
-.news-box-content>.more{color: #b9babd;padding-left: 3px;}
+.news-box-content>.more{color: #b9babd;padding-left: 3px;position: relative;bottom: 5px;}
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{left: -42px}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{right: -42px;}
 
@@ -184,19 +188,24 @@
 a{cursor:pointer;}
 .more,.product-btn,.back_top,.product-cate-box{cursor:pointer;}
 .about-2 .right-bottom .more{pointer-events:all}
+
+
+.index-text{  margin-left: -3px;}
 @media(min-width: 1024px) and (max-width:1279px){
-	p{font-size: 1em;}
+	p{font-size: 1.3em;}
 	h2{font-size: 2em}
-	.about-2 .left-top-border{margin-top: 15px;}
+	.martop70 {margin-top: 2em;}
+	 .martop5em{margin-top: 2em;}
+	.about-2 .left-top-border{margin-top: 20%}
 	.about h1{font-size: 2em}
 	.about-2 h1{font-size: 1em}
-	.about .more{padding: 10px 10px}
+	.about .more{padding: 5px 20px}
 	.about .more-content{height: 88%;}
 	p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 	.about-2 .more-btn{padding:5px 10px;margin-top: -4px; margin-bottom: 0}
 	.about-2 .more-btn-414354{ margin-bottom: 7px}
 	.about-2 .more-btn:nth-child(1){ margin-bottom: 7px}
-	.join-banner .more{color: #fff; background: rgba(65,67,83,0.8); padding: 10px 20px;position: absolute;     bottom: 23%;right: 31.5%;}
+	.join-banner .more{color: #fff; background-color: rgba(65,67,83,0.8); padding: 10px 20px;position: absolute;     bottom: 23%;right: 31.5%;}
 	.btn-box_1{position: absolute; bottom: 13%;left: 43%; z-index: 10}
 	.btn-box_3{position: absolute; bottom: 12%;left: 44.5%;z-index: 10}
 	.btn-box_5{position: absolute;   bottom: 21%; left: 45%;z-index: 10}
@@ -211,28 +220,32 @@ a{cursor:pointer;}
 	
 	.about-2 .more-btn-414354{padding:5px 20px; margin-top: 0;}
 	.about-2 .more-btn:nth-child(2),.about-2 .more-btn:nth-child(3){color: #fff;  padding: 5px 20px;  margin-top: 0px;display: inline-block; margin-bottom: 0;background-color: rgba(255,255,255,0.11);}
-	.index-text{  width: 40%; margin-top: 15%;margin-left: -1px; margin-bottom: 1%;}
-	.index-text-01{width: 10%; margin-top: 2.5%}
+	.index-text{  width: 40%; margin-top: 10%;margin-left: -1px; margin-bottom: 3%;}
+	.index-text-01{width: 10%; margin-top: 1.5%;margin-bottom: 10px}
 	.banner .more{  bottom: 21%;  padding: 15px 40px;}
+	.about .more{margin-top: 5px}
+	.about_right_top{width: 36.5%}
+	.about_right_bottom{width: 63.5%}
 }
 @media(min-width: 1152px){
 	.join-banner .more{  right: 37%;}
 }
 
 @media(min-width: 1280px) and (max-width:1400px){
-	p{font-size: 1em;}
+	p{font-size: 1.3em;}
 	h2{font-size: 2em}
-	.about-2 .left-top-border{margin-top: 20px;}
-	.about .more{ width: 7%;}
+	.about-2 .left-top-border{margin-top: 20%;}
+	.martop70 {margin-top: 2em;}
+	 .martop5em{margin-top: 2em;}
 	.about h1{font-size: 2em}
 	.about-2 h1{font-size: 1em}
-	.about .more{padding: 10px 10px}
+	.about .more{padding: 10px 40px}
 	.about .more-content{height: 88%;}
 	p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 	.about-2 .more-btn{padding:5px 10px;margin-top: -4px; margin-bottom: 0}
 	.about-2 .more-btn-414354{ margin-bottom: 10px}
 	.about-2 .more-btn:nth-child(1){ margin-bottom: 10px}
-	.join-banner .more{color: #fff; background: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 26%;right: 32%;}
+	.join-banner .more{color: #fff; background-color: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 26%;right: 32%;}
 	.btn-box_1{position: absolute; bottom: 12%;left: 43%; z-index: 10}
 	.btn-box_3{position: absolute; bottom: 10%;left: 44.5%;z-index: 10}
 	.btn-box_5{position: absolute;   bottom: 18%; left: 45%;z-index: 10}
@@ -245,27 +258,32 @@ a{cursor:pointer;}
 	.product-cate-pic{  left: 31%;top: 20%;}
 	.news-more-btn{color: #fff; background-color: rgba(255,255,255,0.11);  padding: 5px 55px;  margin-top: 10px;display: inline-block; margin-bottom: 2em; pointer-events:all;}
 	.swiper-pagination{margin-top: 10px}
-	.index-text{  width: 40%; margin-top: 15%;margin-left: -1px; margin-bottom: 1%;}
-	.index-text-01{width: 10%; margin-top: 2.5%}
+	.index-text{  width: 40%; margin-top: 15%;margin-left: -1px; margin-bottom: 4%;}
+	.index-text-01{width: 10%; margin-top: 1.5%;;margin-bottom: 20px}
+	.about .more{margin-top: 15px}
+	.about_right_top{width: 36.5%}
+	.about_right_bottom{width: 63.5%}
 }
 @media(min-width: 1280px){
 	.join-banner .more{right: 34.5%;}
 	.product-cate-pic>img{width: 64%}
 	.product-cate-box p{margin-left: -50%}
 }
+
 @media(min-width: 1401px) and (max-width:1600px){
-	p{font-size: 1em;}
+	p{font-size: 1.3em;}
 	h2{font-size: 2em}
-	.about-2 .left-top-border{margin-top: 25px;}
-	.about .more{ width: 7%;}
+	.martop70 {margin-top: 2em;}
+	 .martop5em{margin-top: 2em;}
+	.about-2 .left-top-border{margin-top: 20%;}
 	.about h1{font-size: 2em}
 	.about-2 h1{font-size: 1em}
-	.about .more{padding: 10px 10px}
+	.about .more{padding: 10px 40px}
 	.about .more-content{height: 88%;}
 	.about-2 .more-btn{padding:5px 10px;margin-top: 10px; margin-bottom: 0}
 	.about-2 .more-btn-414354{ margin-bottom: 10px}
 	.about-2 .more-btn:nth-child(1){ margin-bottom: 10px}
-	.join-banner .more{color: #fff; background: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 26%;right: 35.5%;}
+	.join-banner .more{color: #fff; background-color: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 26%;right: 35.5%;}
 	.btn-box_1{position: absolute; bottom: 13%;left: 43%; z-index: 10}
 	.btn-box_3{position: absolute; bottom: 12%;left: 44.5%;z-index: 10}
 	.btn-box_5{position: absolute;   bottom: 20%; left: 45%;z-index: 10}
@@ -277,19 +295,24 @@ a{cursor:pointer;}
 
 	 .product-cate-pic>img{width: 70%}
 	.product-cate-pic{  left: 31%;top: 20%;}
-	.index-text{  width: 40%; margin-top: 7%;margin-left: -1px; margin-bottom: 1%;}
-	.index-text-01{width: 10%; margin-top: 2.5%}
+	.index-text{  width: 40%; margin-top: 7%;margin-left: -1px; margin-bottom: 4%;}
+	.index-text-01{width: 10%; margin-top: 2.5%;margin-bottom: 35px}
+	.about .more{margin-top: 30px}
 }
-
+@media(width: 1440px){
+	.index-text-01{width: 10%; margin-top: 2%;;margin-bottom: 20px}
+	.about .more{margin-top: 15px}
+	.about-2 .more-btn:nth-child(2), .about-2 .more-btn:nth-child(3){margin-bottom: 0}
+	.about_right_top {width: 37%;}
+}
 @media(min-width: 1680px){
-	p{font-size: 1.6em;}
+	p{font-size: 1.3em;}
 	h2{font-size: 2.4em}
-	.martop70 {margin-top: 2em;}
-	.about-2 .left-top-border{margin-top: 10%;}
-	.about .more{ width: 7%;}
+	.martop70 {margin-top: 5em;}
+	.about-2 .left-top-border{margin-top: 20%;}
 	.about h1{font-size: 4em}
 	.about-2 h1{font-size: 1em}
-	.about .more{padding: 10px 10px}
+	.about .more{padding: 10px 40px}
 	.martop5em{margin-top:4em;}
 	.right-bottom-text{width: 68%;  height: 59%;}
 	.about .more-content{height: 88%;}
@@ -298,7 +321,7 @@ a{cursor:pointer;}
 	.martop5em+.more-btn{margin-top:-4px;}
 	.about-2 .more-btn:nth-child(1){ margin-bottom: 10px}
 	.about-2 .more-btn:nth-child(2){ margin-bottom: 10px}
-	.join-banner .more{color: #fff;background: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 31%;right: 37%;}
+	.join-banner .more{color: #fff;background-color: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 31%;right: 37%;}
 	.btn-box_1{position: absolute; bottom: 16%;left: 43%; z-index: 10}
 	.btn-box_3{position: absolute; bottom: 13%;left: 44.5%;z-index: 10}
 	.btn-box_5{position: absolute;   bottom: 22%; left: 45%;z-index: 10}
@@ -309,30 +332,30 @@ a{cursor:pointer;}
 	.news-text{width:10%;}
 
 	.product-cate-pic>img{width: 100%}
-
+	.about_right_top{width: 37.1%}
 	.product-cate-pic{   left: 28%;top: 10%;}
-	.index-text{width: 50%}
-	.index-text-01{width: 10%; margin-top: 2.5%}
+	.index-text{width: 50%;margin-bottom: 15px}
+	.index-text-01{width: 10%; margin-top: 1.5%;margin-bottom: 35px}
+	.about .more{margin-top: 30px}
 	 
 }
 @media(min-width: 1681px) and (max-width:1920px){
-	p{font-size: 1.6em;  line-height: 1.8em}
+	p{font-size: 1.3em;  line-height: 1.8em}
 	h2{font-size: 2.9em}
-	.martop70 {margin-top: 2em;}
+	.martop70 {margin-top: 5em;}
 	.martop5em{margin-top:5em;}
 	.right-bottom-text{width: 68%;  height: 59%;}
-	.about-2 .left-top-border{margin-top: 10%;}
-	.about .more{ width: 7%;}
+	.about-2 .left-top-border{margin-top: 20%;}
 	.about h1{font-size: 4em}
 	.about-2 h1{font-size: 1.6em}
-	.about .more{padding: 10px 10px}
+	.about .more{padding: 10px 40px}
 	.about .more-content{height: 80%;}
 	.about-2 .more-btn{padding:5px 10px;margin-top: -4px; margin-bottom: 0}
 	.about-2 .more-btn-414354{padding:10px 40px;margin-top: 10px; margin-bottom: 0}
 	.martop5em+.more-btn{margin-top:30px;}
 	.about-2 .more-btn:nth-child(1){ margin-bottom: 10px}
 	.about-2 .more-btn:nth-child(2){ margin-bottom: 10px}
-	.join-banner .more{color: #fff; background: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 32.5%;right: 38.2%;}
+	.join-banner .more{color: #fff; background-color: rgba(65,67,83,0.8); padding: 10px 40px;position: absolute;     bottom: 32.5%;right: 38.2%;}
 	.btn-box_1{position: absolute; bottom: 16%;left: 43%; z-index: 10}
 	.btn-box_3{position: absolute; bottom: 14%;left: 44.5%;z-index: 10}
 	.btn-box_5{position: absolute;   bottom: 23%; left: 45%;z-index: 10}
@@ -341,11 +364,15 @@ a{cursor:pointer;}
 	.btn-box_4{position: absolute; bottom: 9%;left: 43.7%;z-index: 10}
 	.btn-box_6{position: absolute;   bottom: 19%; left: 43.5%;z-index: 10;}
 	.news-text{width:10%;}
-	
+	.about_right_top{width: 37.5%}
 	.product-cate-pic>img{width: 100%}
 	.product-cate-pic{  left: 31%;top: 20%;}
 	.about-2 .right-bottom .more{padding: 10px 20px;}
-	.index-text{width: 50%}
-	.index-text-01{width: 10%; margin-top: 2.5%}
+	.index-text{width: 50%;margin-bottom: 15px}
+	.index-text-01{width: 10%; margin-top: 1.5%;margin-bottom: 35px}
+	.about .more{margin-top: 30px}
 }
 p{ margin: 0 0 5px;}
+.index-text{margin-bottom: 0}
+.about-2 .more-btn-414354{margin-top:0;}
+.about-2 .more-btn:nth-child(2){margin-top: 0}

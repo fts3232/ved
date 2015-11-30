@@ -51,7 +51,7 @@ textarea {-webkit-appearance: none;}
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#f2f2f4;}
 .navbar-nav{width: 75%;margin: 0 auto;}
 .search-btn{  position: absolute;right: 9px;}
-.logo{margin-top: -10px;width: 80%}
+.logo{margin-top: -6px;width: 80%}
 .navbar-toggle .icon-bar{width: 30px; height: 4px;}
 .nav>li{  width: 50%;float: left;  text-align: center;}
 .navbar-default .navbar-toggle .icon-bar{ background-color: #d3d4d7}
@@ -68,5 +68,9 @@ textarea {-webkit-appearance: none;}
 .footer .pull-left{  width: 65%;margin-top: -15px;}
 .footer .pull-right{text-align: right; width: 35%}
 .footer-logo{width: 64%;margin-bottom: 10px}
-.back_top{position: absolute;width: 20%; top: 0; left: 40%}
+.back_top{position: absolute;width: 20%; top: -8px; left: 40%}
  .footer p{ color: #fff;opacity: 0.5;font-size: 1em}
+
+ @media(width:320px){
+ 	.back_top{top: -7px;}
+ }

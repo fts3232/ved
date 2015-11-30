@@ -40,6 +40,22 @@ $(document).ready(function(){
 		$(this).find('img').eq(0).addClass('show').removeClass('hide').siblings().addClass('hide').removeClass('show')
 	})
 	
+	$('.product-btn').click(function(){
+		index=$(this).data('index')
+		num=$(this).data('num')
+		if(num==60){
+			swiper_07[index].slideTo(0, 1000, false);
+			$('.swiper-07:eq('+index+')').find('.btn-box_1_2 a').eq(0).addClass('on')
+	        $('.swiper-07:eq('+index+')').find('.btn-box_1_2 a').eq(1).removeClass('on')
+
+		}
+		else{
+			swiper_07[index].slideTo(2, 1000, false);
+			$('.swiper-07:eq('+index+')').find('.btn-box_1_2 a').eq(1).addClass('on')
+	        $('.swiper-07:eq('+index+')').find('.btn-box_1_2 a').eq(0).removeClass('on')
+		}
+	})
+
 	$('.bottom').click(function(){
 		height=$('.page1').height();
 		$('body').stop().animate({'scrollTop':height+'px'});
@@ -48,6 +64,7 @@ $(document).ready(function(){
 	    slidesPerView : 3,//'auto'
 	    spaceBetween : 20,
 	    slidesOffsetBefore : 25,
+	    slidesOffsetAfter : 25,
 	  })  
 	var mySwiper2 = new Swiper ('.swiper-02', {
 	    slidesPerView : 1,//'auto'
@@ -72,27 +89,6 @@ $(document).ready(function(){
 	    slidesPerView : 'auto',//'auto'
     	pagination: '.swiper-03 .swiper-pagination',
 	  })   
-	var swiper_06=[];
-	$('.swiper-06').each(function(index, el) {
-		swiper_06[index] = new Swiper ('.swiper-06:eq('+index+')', {
-			slidesPerView : 'auto',//'auto'
-		    initialSlide :0,
-		    freeMode : false,
-		    preventLinksPropagation : false,
-		    onTransitionEnd: function(swiper){
-	            if(swiper.isEnd==true){
-	            	swiper.slideTo(2, 1000, false);//切换到第一个slide，速度为1秒
-	            	$('.swiper-06:eq('+index+')').find('.btn-box_1_2 a').eq(1).addClass('on')
-	            	$('.swiper-06:eq('+index+')').find('.btn-box_1_2 a').eq(0).removeClass('on')
-	            }
-	            else if(swiper.isBeginning==true){
-	            	swiper.slideTo(0, 1000, false);//切换到第3个slide，速度为1秒
-	            	$('.swiper-06:eq('+index+')').find('.btn-box_1_2 a').eq(0).addClass('on')
-	            	$('.swiper-06:eq('+index+')').find('.btn-box_1_2 a').eq(1).removeClass('on')
-	            }
-	        }
-		})  
-	})
 	var swiper_07=[];
 	$('.swiper-07').each(function(index, el) {
 		swiper_07[index] = new Swiper ('.swiper-07:eq('+index+')', {

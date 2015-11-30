@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.main{background: url(../images/success_bg.jpg);margin-top: 54px;position: relative;}
+.main>img{width: 100%}
+.btns>img{margin-right: 4px;width: 1.2em}
+.btns:nth-child(2){background: #1dd2af;  position: absolute;top: 33%;left: 24%;padding:10px 60px; color: #414353;font-size: 1.2em;border-radius: 3px}
+.btns:nth-child(3){background: #1dd2af;  position: absolute;top: 41%;left: 24%;padding:10px 60px;color: #414353;font-size: 1.2em;border-radius: 3px}
+.btns:hover{background: #23ac92}
+@media(width: 320px){
+	.btns:nth-child(2){background: #1dd2af;  position: absolute;top: 39%;left: 20%;}
+	.btns:nth-child(3){background: #1dd2af;  position: absolute;top: 50%;left: 20%;}
+}

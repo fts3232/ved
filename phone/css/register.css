@@ -7,19 +7,21 @@
 .main input[type="text"],.main input[type="password"]{color:rgba(65,67,83,0.6);background-color:transparent;  line-height: 3em; font-size: 1.3em; height: 3em; width: 250px; padding-left: 30px}
 .main input[type="submit"]{width:250px; background-color:rgba(65,67,83,0.65); color: #fff; height: 40px; margin-top: 20px;margin-bottom: 20px; border-radius: 10px}
 .main input[type="submit"]:hover{background-color:rgba(65,67,83,0.80);}
-.box>a{color:#6b6d77;background-color: rgba(65,67,83,0.11); padding:10px 10px; display:inline-block; border-radius: 15px; cursor: pointer;  padding: 5px 50px;}
-.box>a.on{color:#fff;background-color:rgba(65,67,83,0.65)}
+.box>a{color:#6b6d77;background-color: rgba(65,67,83,0.11); padding:10px 10px; display:inline-block; border-radius: 15px; cursor: pointer;  padding: 5px 50px;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.box>a.on{color:#fff;background-color:rgba(65,67,83,0.65);transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
 .box>a.on:hover{background-color:rgba(65,67,83,0.80)}
 .box>a:hover{background-color: rgba(65,67,83,0.3); }
 .forget{color:rgba(65,67,83,0.6);}
 .forget:hover{color:rgba(65,67,83,0.6);}
 .box{  margin-bottom: 20px;top: -5px}
-.postion_r>img{position:absolute;  top: 7px;  width: 20px;}
+.postion_r>img{position:absolute;  top: 10px;  width: 20px;}
+.postion_r:nth-child(7)>img{width: 21px;  top: 8.5px;}
+.postion_r:nth-child(6)>img{width: 18px;  top: 11px;}
 .line{  border-bottom: 1px solid #414353;width: 250px;margin: 0 auto;}
-.sex{width: 250px;color:#414353; font-size: 1.6em;line-height: 3em ; height: 3em; text-align: left;padding-left: 35px;}
+.sex{width: 250px;color:#414353; font-size: 1.3em;line-height: 3em ; height: 3em; text-align: left;padding-left: 35px;}
 .sex-icon{ background: url('../images/sex-icon-off.png') no-repeat;  width: 16px; margin:0 10px; vertical-align: middle; cursor: pointer; display: inline-block;  height: 16px;}
 .sex-icon.on{background: url('../images/sex-icon-on.png') no-repeat}
-.absolute-center{height: 80%}
+.absolute-center{margin-top: 100px}
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:rgba(65,67,83,0.6);
 }

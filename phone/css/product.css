@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* index */
+.banner{margin-top: 50px;}
+
+input[type="text"]{border: 1px solid #d2d3d5;}
+.search{width: 50%;margin: 0 auto; position: relative; padding-bottom: 15px; padding-top: 15px}
+.product-search{border-radius: 10px;height: 2.1em; background: #fff;width: 100%; padding-left: 10px}
+.product-search-btn{  position:absolute;  right: 9px;height: 2.1em; }
+
+.bottom{  position: absolute; bottom: 5%;left: 45%;  width: 10%;}
+.bottom>img{width: 50%}
+
+.join-banner .more:hover{background-color: rgba(65,67,83,0.9);}
+
+.about{  position: relative;}
+.about h1{  font-size: 4em;font-weight: bold;}
+.about .more{ background-color: rgba(65,67,83,0.2);padding: 10px 40px; margin:0 auto;   display: inline-block;  pointer-events: all; margin-top: 30px;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.about .more-content{ height: 65%; pointer-events:none;  width: 90%;}
+.about .more:hover,.about .more:active{border:1px solid #414353; background-color: #777884; color:#fff;}
+.about .more.on{border:1px solid #414353; background-color: #777884; color:#fff; padding: 10px 20px; margin:0 auto; width:110px; margin-top: 30px;}
+
+.about-2 .more-btn-414354{color: #414353;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(65,67,83,0.11);transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.about-2 .more-btn-414354:hover{background-color: rgba(65,67,83,0.2);}
+
+.about-2 .more-btn:nth-child(2),.about-2 .more-btn:nth-child(3){color: #fff;  padding: 10px 40px;  margin-top: 10px;display: inline-block; margin-bottom: 2em;background-color: rgba(255,255,255,0.11);transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.about-2 .more-btn:hover{background-color: rgba(255,255,255,0.2);}
+
+.about-2-box{position: absolute;text-align: center; width: 100%; height: 100%; color: #fff;background: rgba(0,0,0,0.6);}
+.about-2-box>p{ height: 20%}
+
+.more-content h1{font-size: 4em}
+.more-content p{font-size: 1.2em; margin:0;}
+.swiper-02 img{width: 100%}
+.swiper-02 .swiper-pagination{position: absolute;}
+.swiper-02 .swiper-pagination-bullet{ background: rgba(255,255,255,0.6);  width: 20px;height: 3px; border-radius: 0}
+.swiper-02 .swiper-pagination-bullet-active{ background: #fff}
+.swiper-02 .swiper-button-prev{background: url('../images/swiper-02-prev.png');left: 12px;background-size: cover;width: 42px;}
+.swiper-02 .swiper-button-next{background: url('../images/swiper-02-next.png');right: 32px;background-size: cover;width: 42px;}
+.swiper-02 .more{  position: absolute;bottom: 15%; left: 9%;color: #414353; background: rgba(255,255,255,0.7);  padding: 10px;transition: background 0.2s;-moz-transition: background 0.2s;	/* Firefox 4 */-webkit-transition: background 0.2s;	/* Safari 和 Chrome */-o-transition: background 0.2s;	/* Opera */}
+.swiper-02 .more:hover{  background: rgba(255,255,255,0.8);}
+
+.news{position: relative;text-align: center;}
+.news>img{width: 100%}
+.swiper-03{position: absolute;top: 20%;width:100%;}
+.swiper-03 .swiper-slide{width: 80%}
+
+.swiper-03 .swiper-pagination-bullet{ background: rgba(255,255,255,0.3); }
+.swiper-03 .swiper-pagination-bullet-active{ background: rgba(255,255,255,0.9)}
+
+.news-more-btn{pointer-events:all;color: #fff; background-color: rgba(255,255,255,0.2);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */  padding: 10px 50px;  margin-top: 30px;display: inline-block;transition: background-color 0.2s;-moz-transition: background-color 0.2s;	/* Firefox 4 */-webkit-transition: background-color 0.2s;	/* Safari 和 Chrome */-o-transition: background-color 0.2s;	/* Opera */}
+.news-more-btn:hover{color:#fff;background-color: rgba(65,67,83,0.7);}
+
+.swiper-pagination{position: static; margin-top: 17px}
+
+.product-banner{border-bottom: 3px solid #a6a7ae}
+.product-cate{border-bottom: 3px solid #a6a7ae; padding-top: 15px;}
+.product-cate-box>img{width: 100%}
+.product-cate-pic p{color: #fff;  margin-top: 16%;font-size: 1.2em}
+.product-cate-box.on{background: #414353; z-index: 2}
+.product-cate-box{width: 137px; float: left;}
+.product-cate-pic>img:hover{opacity: 0.7}
+
+.product-list{padding-bottom: 5px;  overflow: hidden;padding-top: 5px}
+.product-box{ border-radius: 5px;border: 1px solid #c5c5c5;position: relative; width: 49%}
+.product-box:nth-child(odd){margin-right:2%; margin-bottom: 10px}
+.product-box:hover{box-shadow: 0px 0px 0px 3px #0eb493}
+
+
+
+.product-content{padding: 5px}
+.product-content .product-name{font-size: 1.3em;  height: 3em;overflow: hidden;}
+.product-cost{color:#0eb493; font-size: 1.8em;  font-weight: bold;}
+.product-num{position: absolute;font-size: 1em; right: 5px; bottom: 5px; color: #949494}
+
+.news-content{position: absolute; top: 0;left: 0;right: 0; bottom: 0;text-align: center;pointer-events:none;  margin-top: 2%;}
+.news-list{pointer-events:all;}
+.news-box{padding: 5px; background: #eeeeee; border-radius: 5px}
+.news-box img{width: 100%}
+.news-box-content{text-align: left;  margin-top: 15px;   padding-left: 16px;}
+.news-box-content>p{font-weight: bolder; color:#414353; padding-left: 3px;  height: 2.1em;}
+.news-box-content>.more{color: #b9babd;padding-left: 3px;}
+
+
+
+.swiper-pagination { bottom: -43px;left: 48%;}
+.swiper-pagination-bullet{margin-right: 10px;}
+
+
+@-moz-keyframes mone {0%{-moz-transform:scale(1)}100%{-moz-transform:scale(1.09)}}
+@-ms-keyframes mone {0%{-ms-transform:scale(1)}100%{-ms-transform:scale(1.09)}}
+@keyframes mone {0%{transform:scale(1)}100%{transform:scale(1.09)}}
+a{cursor:pointer;}
+.more,.product-btn,.back_top,.product-cate-box{cursor:pointer;}
+.about-2 .right-bottom .more{pointer-events:all}
+.index-text-01{width: 50%}
+p{ margin: 0 0 5px;}
+
+
+.ovfHiden{overflow: hidden;height: 100%;}
+@media(width: 320px){
+	.news-more-btn{margin-top: 17px;}
+}

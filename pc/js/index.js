@@ -16,13 +16,28 @@ win.resize(function(){
 });
 $(document).ready(function(){
 	$('.navbar-nav>li>a').mouseover(function(){
-		$('.navbar-nav>li>a').eq(0).removeClass('on');
+		$('.navbar-nav>li').eq(7).removeClass('on');
 		$(this).addClass('on').siblings().removeClass('on');
+		width=0;
+		index=$(this).parent().index()
+		for(i=0;i<index;i++){
+			width+=$('.navbar-nav>li').eq(i).width();
+		}
+		one=width+20;
+		two=width-10;
+		$('.nav_border').stop(true).animate({left:one+'px'},100).animate({left:two+'px'},100).animate({left:width+'px'},100)
 	}).mouseout(function(){
 		$('.navbar-nav>li>a').removeClass('on')
 	})
-	$('.navbar').mouseout(function(){
-		$('.navbar-nav>li>a').eq(0).addClass('on');
+	$('.navbar-nav').mouseout(function(){
+		index=0
+		width=0;
+		for(i=0;i<index;i++){
+			width+=$('.navbar-nav>li').eq(i).width();
+		}
+		one=width+20;
+		two=width-10;
+		$('.nav_border').stop(true).animate({left:one+'px'},100).animate({left:two+'px'},100).animate({left:width+'px'},100)
 	})
 	$('.about-image-box').mouseover(function(){
 		$(this).find('img').eq(1).addClass('show').removeClass('hide').siblings().addClass('hide').removeClass('show')
@@ -35,13 +50,21 @@ $(document).ready(function(){
 		$(this).removeClass('on')
 	})
 	$('.product-btn').mouseover(function(){
-		$(this).addClass('on').siblings().removeClass('on')
+		//$(this).addClass('on').siblings().removeClass('on')
+		$(this).animate({"background-color": '#414353','color':'#fff'},200).siblings().animate({"background-color":'#efefef','color':'#414353'},200)
 		i=$(this).index()
+		_this=$(this)
 		if(i==0){
-			$(this).parent().siblings('img').eq(0).addClass('show').removeClass('hide').siblings('img').addClass('hide').removeClass('show')
+			$(this).parent().siblings('img').eq(1).fadeOut(200,function(){
+				_this.parent().siblings('img').eq(0).removeClass('hide').fadeIn(200)
+			});
+			
 		}
 		else{
-			$(this).parent().siblings('img').eq(1).addClass('show').removeClass('hide').siblings('img').addClass('hide').removeClass('show')
+
+			$(this).parent().siblings('img').eq(0).fadeOut(200,function(){
+				_this.parent().siblings('img').eq(1).removeClass('hide').fadeIn(200)
+			});
 		}
 	})
 	var mySwiper = new Swiper ('.swiper-container', {
@@ -81,4 +104,6 @@ window.onload=function(){
 		    	}
 			}
 		});  
+		index_about_pic=$('.about_right_top img').width()+15;
+		$('.index-text').width(index_about_pic)
 }

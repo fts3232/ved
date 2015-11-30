@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>金音药业有限公司</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/swiper.3.1.2.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/favorite.css">
+	<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+	<!-- ie8以下支持html5 -->
+	<link rel="shortcut icon" href="favicon.ico"  type=”image/x-icon”>
+
+	<!-- end ie8以下支持html5 -->
+</head>
+<body>
+	<!-- header -->
+	<div class="navbar navbar-default" >
+	   <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+	         data-target="#example-navbar-collapse">
+	         <span class="sr-only">切换导航</span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"/></a>
+	   </div>
+	   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+	      <ul class="nav navbar-nav">
+			<li><a href="index.html">金音首页</a></li>
+            <li><a href="about.html">关于金音</a></li>
+            <li><a href="news.html">最新资讯</a></li>
+            <li><a href="product.html">金音产品</a></li>
+            <li><a href="lift.html">健康生活</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="recruit.html">招贤纳士</a></li>
+            <li><a href="register.html">登录/注册</a></li>
+	      </ul>
+	      <div style="border-top:2px solid rgba(255,255,255,0.1);   line-height: 23px;height:27px;  text-align: center;" class="navbar-suoxiao"><a style="display:inline-block;  width: 10%;height: 5px;background: rgba(255,255,255,0.7);border-radius:15px"></a></div>
+	   </div>
+	</div>
+	<!-- end header -->
+	<div class="delete">
+		<div class="absolute-center">
+			<img src="images/float-delete.png" class="img-responsive"/>
+			<div class='delete-btn-box'>
+				<a>删除</a>
+				<a>取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="container-full bg">
+		<img src="images/favo_banner.jpg" class="img-responsive"/>
+	</div>
+	<div class="content">
+		<div class="empty">
+			<img src="images/empty.png" class="img-responsive"/>
+			<a class="empty-btn">去逛逛</a>
+		</div>
+		<div class="favo_list">
+			<div class="list">
+				<div class="favo">
+					<div class="time">1个星期内收藏</div>
+					<div class="favo_content">
+						<img src="images/product-detail-01.jpg"/>
+						<div class="favo_name_cost">
+							<div>维生素D钙咀嚼片-儿童型 90粒装</div>
+							<div>￥83.00</div>
+						</div>
+						<div class="favo_btn">
+							<a class="delete-btn">删除</a>
+							<a>添置购物车</a>
+							<a  onclick="addFav()">分享给朋友</a>
+						</div>
+					</div>
+				</div>
+				<div class="favo">
+					<div class="time">1个星期内收藏</div>
+					<div class="favo_content">
+						<img src="images/product-detail-01.jpg"/>
+						<div class="favo_name_cost">
+							<div>维生素D钙咀嚼片-儿童型 90粒装</div>
+							<div>￥83.00</div>
+						</div>
+						<div class="favo_btn">
+							<a class="delete-btn">删除</a>
+							<a>添置购物车</a>
+							<a onclick="addFav()">分享给朋友</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="not_many_more"><span></span>没有更多啦~<span></span></div>
+		</div>
+	</div>
+	<div class="container-full product-zone text-center">
+		<div class="text-right search-zone">
+			<div class="text-left text">推荐搭配产品：</div>
+		</div>
+		<div class="swiper-container swiper-02">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="box">
+						<a href="product.html"><img src="images/product-detail-01.jpg" class="img-responsive"/>
+						<div class="product-content">
+							<p class="product-name">维生素D钙咀嚼片-儿童型 60粒装  专注儿童健康成长</p>
+							<div class="box-cost">
+								<span>￥83.00</span>
+								<span>1人付款</span>
+							</div>
+						</div></a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box">
+						<a href="product.html"><img src="images/product-detail-01.jpg" class="img-responsive"/>
+						<div class="product-content">
+							<p class="product-name">维生素D钙咀嚼片-儿童型 60粒装  专注儿童健康成长</p>
+							<div class="box-cost">
+								<span>￥83.00</span>
+								<span>1人付款</span>
+							</div>
+						</div></a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box">
+						<a href="product.html"><img src="images/product-detail-01.jpg" class="img-responsive"/>
+						<div class="product-content">
+							<p class="product-name">维生素D钙咀嚼片-儿童型 60粒装  专注儿童健康成长</p>
+							<div class="box-cost">
+								<span>￥83.00</span>
+								<span>1人付款</span>
+							</div>
+						</div></a>
+					</div>
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+		    
+		</div>
+		<div class="swiper-pagination swiper-pagination-02"></div>
+		<a class="reset-btn"><img src="images/Refresh.png"/>换一批</a>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<p>Copyright © 2010 CHINA GOLDEN VOICE. <br/>版权所有. 京ICP备09025285号-1</p>
+	</div>
+	<!-- end footer -->
+</body>
+</html>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/swiper.3.1.2.jquery.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/favorite.js"></script>
+
+<script>
+function addFav(){
+	url=window.location.href
+	title=$('title').html()
+	$(this).attr('title',title)
+    if(document.all){
+    	window.external.addFavorite(url,title);
+    }else if(window.sidebar){
+    	window.sidebar.addPanel(title, url,'');
+    }
+    else{
+    	alert('浏览器收藏没有成功，请使用Ctrl+D进行添加!')
+    }
+    return false;
+}
+</script>
